@@ -11,13 +11,21 @@ body {
     height: 100vh;
 }
 
-.main-container {
+.relative {
+    position: relative;
+}
+
+.bg-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
     background-image: url('svg/bg-hero.svg');
     background-size: contain;
+    overflow: hidden;
 
-    position: relative
+    z-index: -1;
 }
 
 .img-left-top {
@@ -25,21 +33,186 @@ body {
     height: 26.716rem;
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: calc(50% - 284px/2 + -285px);
+    left: calc(50% - 284px/2 - 570px);
 }
 
 .img-left-bottom {
-    width: 28.4rem;
-    height: 28.4rem;
+    width: 20.4rem;
+    height: 20.716rem;
 
     position: absolute;
-    left: 2rem;
-    bottom: 6.5rem;
+    top: calc(50% - 284px/2 + 250px);
+    left: calc(50% - 284px/2 - 519px);
 }
 
 .img-right {
+    width: 43.9rem;
+    height: 43.7rem;
+
     position: absolute;
     right: 0;
-    top: 11.4rem;
+    top: calc(50% - 284px/2 + -110px);
+    right: calc(50% - 284px/2 - 650px);
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    max-width: 111.17rem;
+    height: 40.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .info-container {
+    max-width: 48rem;
+    margin-right: 13.7rem;
+}
+
+.content .info-container .info-title {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+
+.content .info-container .info-subtitle {
+    max-width: 38.3rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+
+    margin-top: 2rem;
+}
+
+.content .info-container .info-input {
+    background: rgb(127, 91, 197, 0.9);
+    width: 100%;
+    height: 8rem;
+    margin-top: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 1rem;
+}
+
+@supports (backdrop-filter: blur(15px)) {
+    .content .info-container .info-input {
+        background: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.content .info-container .info-input input {
+    color: white;
+    background: transparent;
+    width: 70%;
+
+    margin-left: 3rem;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    border: none;
+    outline: none;
+}
+
+.content .info-container .info-input input::placeholder {
+    color: #CDBFD8;
+}
+
+.content .info-container .info-input button {
+    background: #4F3AA7;
+    width: 12rem;
+    height: 6rem;
+    margin: 1rem;
+
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    border: none;
+    border-radius: .6rem;
+
+    cursor: pointer;
+    transition: filter .4s;
+}
+
+.content .info-container .info-input button:hover {
+    filter: brightness(0.9);
+}
+
+/* card */
+.content .card {
+    background: rgba(127, 91, 197, 0.9);
+    width: 50rem;
+    height: 30rem;
+
+    padding: 40px 50px;
+
+    border: 1.5px solid rgba(255, 255, 255, .7);
+    border-radius: 2rem;
+
+    position: relative;
+}
+
+@supports (backdrop-filter: blur(15px)) {
+    .content .card {
+        background: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(15px);
+    }
+}
+
+.content .card p, span {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.content .card .card-title {
+    margin-bottom: 4.6rem;
+}
+
+.content .card img {
+    margin-bottom: 4.5rem;
+}
+
+.content .card .card-number {
+    letter-spacing: 0.3rem;
+}
+
+.content .card .card-name {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+
+    margin-top: 0.8rem;
+}
+
+.content .card .card-date {
+    position: absolute;
+    right: 49px;
+    bottom: 33px;
+    
 }

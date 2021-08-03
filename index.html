@@ -5,25 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Glassmorphism</title>
 </head>
 <body>
-    <main class="main-container">
-        <img class="img-left-top" src="img/blue-spring.png">
-        <img class="img-right" src="img/pink-ball.png">
-        <img class="img-left-bottom" src="img/purple-ball.png">
+    <div class="relative">
+        <div class="bg-hero">
+            <img class="img-left-top" src="img/blue-spring.png">
+            <img class="img-right" src="img/pink-ball.png">
+            <img class="img-left-bottom" src="img/purple-ball.png">
+        </div>
+    </div>
 
-        <div class="info-container">
-            <div class="info-box">
+    <main class="main-container">
+        <div class="content">
+            <div class="info-container">
                 <h1 class="info-title">
                     Worlwide Purchase Access From You Platinum Card
                 </h1>
                 <p class="info-subtitle">
                     Free upgrade option to our platinum services and get lifetime validity.
                 </p>
-                <div class="info-input"></div>
+                <div class="info-input">
+                    <input type="email" placeholder="Your Email" />
+                    <button type="submit"> APPLY </button>
+                </div>
             </div>
-            <div class="card"></div>
+            <div class="card">
+                <p class="card-title">Platinum Card</p>
+                <img src="svg/chip.svg" alt="chip">
+                <p class="card-number">6689 2547 2265 1258</p>
+                <p class="card-name">JESSICA JESSY</p>
+                <span class="card-date">02/49</span>
+            </div>
         </div>
     </main>
 </body>
