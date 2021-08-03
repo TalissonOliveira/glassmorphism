@@ -1,0 +1,17 @@
+<svg width="1219" height="985" viewBox="0 0 1219 985" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="bg-hero">
+<circle id="ellipse-6" opacity="0.5" cx="1015" cy="925" r="6" fill="#B57EF0"/>
+<circle id="ellipse-5" opacity="0.25" cx="271" cy="975" r="10" fill="#B57EF0"/>
+<circle id="ellipse-4" opacity="0.25" cx="767" cy="615" r="4" fill="#B57EF0"/>
+<circle id="ellipse-3" opacity="0.5" cx="1211" cy="200" r="8" fill="#B57EF0"/>
+<circle id="ellipse-2" opacity="0.5" cx="698.5" cy="298.5" r="7.5" fill="#B57EF0"/>
+<circle id="ellipse-1" opacity="0.5" cx="137.5" cy="356.5" r="3.5" fill="#B57EF0"/>
+<circle id="big-ellipse" cx="265.5" cy="191.5" r="187.5" transform="rotate(38.341 265.5 191.5)" stroke="url(#paint0_linear)" stroke-width="2"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="1117.42" y1="224.04" x2="-86.4999" y2="211" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="0.666667" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

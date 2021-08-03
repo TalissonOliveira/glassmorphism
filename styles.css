@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(111.18deg, #55439E 1.26%, #952FFF 100%);
+    height: 100vh;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('svg/bg-hero.svg');
+    background-size: contain;
+
+    position: relative
+}
+
+.img-left-top {
+    width: 29.25rem;
+    height: 26.716rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-left-bottom {
+    width: 28.4rem;
+    height: 28.4rem;
+
+    position: absolute;
+    left: 2rem;
+    bottom: 6.5rem;
+}
+
+.img-right {
+    position: absolute;
+    right: 0;
+    top: 11.4rem;
+}
