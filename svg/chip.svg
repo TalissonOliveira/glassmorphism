@@ -1,15 +1,14 @@
 <svg width="60" height="43" viewBox="0 0 60 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
+<g id="chip">
 <rect width="60" height="43" rx="8" fill="#B293BD"/>
-<rect y="16" width="60" height="1" fill="#CDBFD8"/>
-<rect y="26" width="60" height="1" fill="#CDBFD8"/>
-<rect x="25" y="60" width="60" height="1" transform="rotate(-90 25 60)" fill="#CDBFD8"/>
-<rect x="35" y="60" width="60" height="1" transform="rotate(-90 35 60)" fill="#CDBFD8"/>
-<rect x="16.5" y="9.5" width="27" height="24" rx="5.5" fill="#B293BD" stroke="#CDBFD8"/>
+<rect class="animation-rectangle" id="chip-rectangle" x="16.5" y="9.5" width="27" height="24" rx="5.5" fill="#B293BD" stroke="#CDBFD8"/>
+<line class="animation-line2" id="chip-line8" x1="25.5" x2="25.5" y2="9" stroke="#CDBFD8"/>
+<line class="animation-line1" id="chip-line7" x1="35.5" x2="35.5" y2="9" stroke="#CDBFD8"/>
+<line class="animation-line3" id="chip-line6" x1="60" y1="16.5" x2="44" y2="16.5" stroke="#CDBFD8"/>
+<line class="animation-line2" id="chip-line5" x1="60" y1="26.5" x2="44" y2="26.5" stroke="#CDBFD8"/>
+<line class="animation-line1" id="chip-line4" x1="35.5" y1="43" x2="35.5" y2="34" stroke="#CDBFD8"/>
+<line class="animation-line3" id="chip-line3" x1="25.5" y1="43" x2="25.5" y2="34" stroke="#CDBFD8"/>
+<line class="animation-line2" id="chip-line2" y1="26.5" x2="16" y2="26.5" stroke="#CDBFD8"/>
+<line class="animation-line1" id="chip-line1" y1="16.5" x2="16" y2="16.5" stroke="#CDBFD8"/>
 </g>
-<defs>
-<clipPath id="clip0">
-<rect width="60" height="43" rx="8" fill="white"/>
-</clipPath>
-</defs>
 </svg>

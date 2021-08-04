@@ -216,3 +216,38 @@ body {
     bottom: 33px;
     
 }
+
+.animation-line1 {
+    stroke-width: 1px;
+    animation: animate-line-1 8s ease-in-out forwards;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+}
+.animation-line2 {
+    stroke-width: 1px;
+    animation: animate-line-1 8s ease-in-out .3s forwards;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+}
+.animation-line3 {
+    stroke-width: 1px;
+    animation: animate-line-1 8s ease-in-out .5s forwards;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+}
+
+.animation-rectangle {
+    stroke-width: 1px;
+    animation: animate-line-1 2.5s ease-in-out .5s forwards;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+}
+
+@keyframes animate-line-1 {
+    0% {
+        stroke-dashoffset: 100;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
